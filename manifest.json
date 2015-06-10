@@ -1,0 +1,19 @@
+{
+  "name": "Flow to Strava",
+  "version": "0.0.1",
+  "description": "Upload your Polar Flow activity to Strava.",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "https://flow.polar.com/training/analysis/*",
+    "https://www.strava.com/upload/select",
+    "declarativeContent",
+    "tabs"
+  ],
+  "page_action": {
+    "default_title": "Sync this activity with Strava"
+  },
+  "manifest_version": 2
+}
